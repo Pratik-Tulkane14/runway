@@ -4,34 +4,45 @@ import { items } from '../types'
 
 const Footer = () => {
   return (
-    <div className='h-screen w-full flex flex-col gap-y-28  px-5 py-38 bg-[#0C0C0C] '>
-      <div className="flex justify-between  py-14">
+    <>
+      <div className="h-full w-full flex flex-wrap flex-col justify-start p-5 gap-y-10 bg-[#0C0C0C]">
+        <video
+          muted
+          autoPlay
+          loop
+          className='rounded-lg  w-full'
+        >
+          <source src='/videos/hero.mp4' />
+        </video>
+        <div className="flex flex-col md:flex-row justify-between">
 
-        {Object.entries(footerItems).map(([category, item]) => {
-          return (
-            <div className="w-[70%] flex flex-col  items-start " key={category}>
-              <h6 className='text-dark-gray" py-4 text-sm capitalize'>{category}</h6>
-              {item.map((item: items, index: number) => {
-                return (
-                  <div className="flex flex-col " key={index}>
-                    <a target='_blank' href={item.path} className='text-white hover:underline transition-all ease-in-out duration-200 capitalize' >{item.key}</a>
-                  </div>
-                )
-              })}
-            </div>
-          )
-        })}
-      </div>
-      <div className="flex justify-between items-center w-1/2 ">
-        <h6 className="font-bold text-white text-2xl">runway</h6>
-        <div className="flex">
-          <a href="#" className='capitalize text-dark-gray text-sm'>© 2025 Runway AI, Inc./</a>
-          <a href="#" className='capitalize text-dark-gray text-sm'>terms of use privacy policy/</a>
-          <a href="#" className='capitalize text-dark-gray text-sm'>code of conduct/</a>
-          <a href="#" className='capitalize text-dark-gray text-sm'>system status</a>
+          {Object.entries(footerItems).map(([category, item]) => {
+            return (
+              <div className="w-[70%] flex flex-col  items-start " key={category}>
+                <h6 className='text-dark-gray" py-4 text-sm capitalize'>{category}</h6>
+                {item.map((item: items, index: number) => {
+                  return (
+                    <div className="flex flex-col " key={index}>
+                      <a target='_blank' href={item.path} className='text-white hover:underline transition-all ease-in-out duration-200 capitalize' >{item.key}</a>
+                    </div>
+                  )
+                })}
+              </div>
+            )
+          })}
+        </div>
+        <div className="w-full flex flex-col md:flex-row justify-between items-start md:gap-x-28 md:w-2/3 ">
+          <h6 className="font-bold text-white text-2xl flex-[2]">runway</h6>
+          <div className="flex flex-wrap gap-x-1">
+            <a href="#" className='capitalize text-dark-gray text-sm'>© 2025 Runway AI, Inc.</a>
+            <a href="#" className='capitalize text-dark-gray text-sm'>terms of use privacy policy</a>
+            <a href="#" className='capitalize text-dark-gray text-sm'>code of conduct</a>
+            <a href="#" className='capitalize text-dark-gray text-sm'>system status</a>
+          </div>
         </div>
       </div>
-    </div>
+    </>
+
   )
 }
 

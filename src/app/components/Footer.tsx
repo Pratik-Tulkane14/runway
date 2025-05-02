@@ -6,7 +6,7 @@ const Footer = () => {
   const style = "capitalize text-[#efeee699] text-sm"
   return (
     <>
-      <div className="relative h-full w-full flex flex-wrap flex-col justify-start p-5 gap-y-10 bg-[#0C0C0C]">
+      <div className=" h-full w-full flex flex-wrap flex-col justify-start p-5 gap-y-10 bg-[#0C0C0C]">
         <video
           muted
           autoPlay

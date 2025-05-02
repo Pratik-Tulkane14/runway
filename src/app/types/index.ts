@@ -18,4 +18,5 @@ export interface cardTypes {
   imgPath: string;
   heading: string;
   date: string;
+  style?: string;
 }

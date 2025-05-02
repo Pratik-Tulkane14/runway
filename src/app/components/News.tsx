@@ -5,7 +5,7 @@ import Card from './Card'
 
 const News = () => {
     return (
-        <div className={`${commonStyle} md:mt-98 px-32 flex flex-col`}>
+        <div className={`${commonStyle} md:my-20 px-32 flex flex-col`}>
             <h3 className='text-[#0c0c0c] text-3xl my-3'>News</h3>
             <div className="w-full flex flex-col md:flex-row gap-2" >
                 {cardArr.map((item, index) => {

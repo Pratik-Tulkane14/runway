@@ -1,1 +1,1 @@
-export const commonStyle="w-full h-screen px-4 relative"
+export const commonStyle="px-4"

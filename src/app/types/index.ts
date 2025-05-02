@@ -13,3 +13,9 @@ export interface footerItem {
   "get started": items[];
   connect: items[];
 }
+export interface cardTypes {
+  key?: number;
+  imgPath: string;
+  heading: string;
+  date: string;
+}

@@ -1,35 +1,30 @@
 @import "tailwindcss";
+/* @import "tailwindcss/preflight";
+@tailwind utilities; */
 @font-face {
-  font-family: runway;
-  src: url("/fonts/font.woff2") format("woff2");
+  font-family: abcNormal;
+  src: url("/fonts/abcNormal.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: timesNow;
+  src: url("/fonts./timesNow") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --text-dark-gray: "#666e7a";
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --background: #0a0a0a; */
-    --foreground: #ededed;
-  }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: runway, Times New Roman, Arial, sans-serif;
+  /* background: var(--background);
+  color: var(--foreground); */
+  font-family: abcNormal, timesNow, Times New Roman, Arial, sans-serif;
   max-width: 1920px;
   margin: 0 auto;
 }

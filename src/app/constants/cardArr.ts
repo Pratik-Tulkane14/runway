@@ -12,7 +12,7 @@ const cardArr: cardTypes[] = [
     date: "News / May 1, 2024",
   },
   {
-    imgPath: "/images/card3.jpg",
+    imgPath: "/images/lionsgate.jpg",
     heading: "Runway Partners with Lionsgate",
     date: "News / June 1, 2024",
   },

@@ -1,6 +1,6 @@
 import React from 'react'
-import initiativesArr from '../constants/initiativesArr'
 import Card from './Card'
+import creativeArr from '../constants/creativeArr'
 
 const Creatives = () => {
   return (
@@ -9,7 +9,7 @@ const Creatives = () => {
         are using Runway.</h1>
       <button className='text-black bg-white border-1 capitalize rounded-full px-4 py-1   hover:text-white hover:bg-black transition-all ease-in-out duration-300 '>more customer stories</button>
       <div className="flex flex-col md:flex-row gap-3">
-        {initiativesArr.map((item, index) => {
+        {creativeArr.map((item, index) => {
           return <Card
             key={index}
             imgPath={item.imgPath}

@@ -11,10 +11,10 @@ const Brands = () => {
   ];
   return (
     <>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-hidden flex justify-center">
         <div className="flex whitespace-nowrap animate-marqueeFast">
           {items.map((item, index) => (
-            <div key={`original-${index}`} className="inline-flex items-center">
+            <div key={`original-${index}`} className="inline-flex justify-center items-center">
               {item.text && <h1 className="mx-4">{item.text}</h1>}
               {item.circle && (
                 <div className="h-[50px] w-[50px] bg-orange-500 rounded-full mx-[2vw] my-[1vw]"></div>

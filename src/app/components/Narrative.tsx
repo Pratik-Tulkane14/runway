@@ -7,23 +7,23 @@ interface image {
 const Narrative = () => {
     const images: image[] = [
         {
-            path: "/images/poster1.jpg",
-        },
-        {
-            path: "/images/poster2.jpg",
+            path: "/images/poster4.jpg",
         },
         {
             path: "/images/poster3.jpg",
         },
         {
-            path: "/images/poster4.jpg",
+            path: "/images/poster2.jpg",
         },
         {
             path: "/images/poster1.jpg",
         },
+        {
+            path: "/images/monkey.jpg",
+        },
     ]
     return (
-        <div className={`${commonStyle} bg-black flex flex-col gap-15 items-center py-10`}>
+        <div className={`${commonStyle} bg-black flex flex-col px-28 gap-15 items-center py-10`}>
             <div className="flex flex-col items-center gap-2  sm:w-[45%]">
                 <p className='text-white font-bold text-sm'>Runway Gen-4</p>
                 <h4 className='text-white text-3xl'>Narrative Capabilities</h4>
@@ -38,7 +38,7 @@ const Narrative = () => {
                         alt={item.path}
                         height={100}
                         width={100}
-                        className='h-[500px] w-auto object-contain rounded-xl'
+                        className='h-[635px] w-auto object-contain rounded-xl'
                     />
                 })}
             </div>

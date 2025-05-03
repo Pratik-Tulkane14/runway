@@ -1,5 +1,4 @@
 import React from 'react'
-import { commonStyle } from '../constants/commonStyle'
 import cardArr from '../constants/cardArr'
 import Card from './Card'
 

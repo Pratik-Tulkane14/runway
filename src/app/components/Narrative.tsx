@@ -1,5 +1,4 @@
 import React from 'react'
-import { commonStyle } from '../constants/commonStyle'
 import Image from 'next/image'
 import Button from './Button'
 interface image {

@@ -8,6 +8,7 @@ const researchArr: cardTypes[] = [
   },
   {
     imgPath: "/images/girl.jpg",
+    // imgPath: "/images/Researchhub_002.png",
     heading: "Introducing Frames",
     date: "research / May 1, 2024",
   },

@@ -4,7 +4,7 @@ import initiativesArr from '../constants/initiativesArr'
 
 const Initiative = () => {
     return (
-        <div className='w-full h-full flex flex-col gap-8 bg-black px-5 sm:px-28 py-5'>
+        <div className='w-full h-full flex flex-col gap-8 bg-[#0c0c0c] px-5 sm:px-28 py-5'>
             <h3 className='text-white text-2xl sm:text-4xl'>Runway Studios Initiatives</h3>
             <div className="flex flex-col md:flex-row gap-3">
                 {initiativesArr.map((item, index) => {

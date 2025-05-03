@@ -29,6 +29,6 @@ export interface buttonProps {
 }
 export interface videoProps {
   source: string;
-  style: string;
+  style?: string;
   poster?: string;
 }

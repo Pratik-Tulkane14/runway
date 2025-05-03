@@ -5,7 +5,7 @@ import VideoUi from './VideoUi'
 const Tech = () => {
     return (
         <>
-            <div className='w-full h-full mt-18  px-4 flex flex-col justify-center items-center bg-white gap-y-0 md:gap-y-10'>
+            <div className='w-full h-full mt-18  px-5 flex flex-col justify-center items-center bg-white gap-y-0 md:gap-y-10'>
                 <div className="flex flex-col items-center gap-y-5  md:mt-20">
 
                     <h6 className="font-['timesNew'] text-3xl md:text-[5.5vw] leading-10 md:leading-20">Technology for a new era <br />

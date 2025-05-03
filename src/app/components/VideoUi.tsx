@@ -10,7 +10,7 @@ const VideoUi: React.FC<videoProps> = ({ source, style, poster }) => {
             playsInline
             poster={poster}
             preload='auto'
-            className={style}
+            className={`${style} "w-full rounded-lg"`}
         >
             <source src={source} />
         </video>

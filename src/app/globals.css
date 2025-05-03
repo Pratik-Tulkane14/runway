@@ -21,27 +21,18 @@
   --font-mono: var(--font-geist-mono);
 }
 .moving-images {
-  /* display: inline-block; */
-  /* white-space: nowrap; */
   animation: move;
-  animation-timing-function: 10s;
+  animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-}
-.circle {
-  height: 50px;
-  width: 50px;
-  background-color: orangered;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 1vw 2vw;
+  width: max-content;
 }
 @keyframes move {
   from {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 body {

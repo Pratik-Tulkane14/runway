@@ -1,12 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import { BrandImage } from '../types';
 
-interface BrandImage {
-    path: string;
-    alt: string;
-    width: number;
-    height: number;
-}
+
 
 const Partners = () => {
     const baseImages: BrandImage[] = [
@@ -53,40 +49,24 @@ const Partners = () => {
             height: 25
         },
     ];
-
+    const images = [...baseImages, ...baseImages, ...baseImages, ...baseImages]
     return (
-        <div className='py-16 flex flex-col items-center gap-3 bg-gray-50'>
+        <div className='py-16 flex flex-col items-center gap-3 bg-[#F9FAFB]'>
             <h6 className='text-gray-500 text-sm font-medium uppercase tracking-wider'>
                 Select Enterprise Partners
             </h6>
 
             <div className="w-full overflow-hidden relative">
-                <div className="flex">
-                    {/* First Marquee */}
-                    <div className="flex animate-marquee whitespace-nowrap">
-                        {baseImages.map((item, index) => (
-                            <div key={`first-${index}`} className="inline-flex items-center justify-center mx-8">
+                <div className="flex items-center py-4">
+                    <div className="flex moving-images whitespace-nowrap">
+                        {images.map((item, index) => (
+                            <div key={`img-${index}`} className="inline-flex items-center justify-center mx-8 min-w-max">
                                 <Image
                                     src={item.path}
                                     alt={item.alt}
                                     width={item.width}
                                     height={item.height}
-                                    className="object-contain grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
-                                />
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Second Marquee (duplicate) */}
-                    <div className="flex animate-marquee whitespace-nowrap absolute top-0 left-full">
-                        {baseImages.map((item, index) => (
-                            <div key={`second-${index}`} className="inline-flex items-center justify-center mx-8">
-                                <Image
-                                    src={item.path}
-                                    alt={item.alt}
-                                    width={item.width}
-                                    height={item.height}
-                                    className="object-contain grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
+                                    className="object-contain grayscale"
                                 />
                             </div>
                         ))}

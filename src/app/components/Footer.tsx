@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <>
       <div className=" h-full w-full flex flex-wrap flex-col justify-start p-5 gap-y-10 bg-[#0C0C0C]">
-        <VideoUi source="/videos/hero.mp4" style="" poster=''/>
-        <div className="flex flex-col md:flex-row justify-between">
+        <VideoUi source="/videos/hero.mp4" style="" poster='' />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
 
           {Object.entries(footerItems).map(([category, item]) => {
             return (
-              <div className="w-[500px] sm:w-[70%] flex flex-col flex-wrap items-start border-2 border-white" key={category}>
+              <div className="w-full sm:w-[70%] flex flex-col flex-wrap items-start " key={category}>
                 <h6 className='text-[#efeee699] py-4 text-sm capitalize '>{category}</h6>
                 {item.map((item: items, index: number) => {
                   return (

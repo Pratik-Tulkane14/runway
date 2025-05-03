@@ -32,3 +32,9 @@ export interface videoProps {
   style?: string;
   poster?: string;
 }
+export interface BrandImage {
+  path: string;
+  alt: string;
+  width: number;
+  height: number;
+}

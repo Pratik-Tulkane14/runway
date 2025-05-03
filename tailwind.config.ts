@@ -13,12 +13,12 @@ const config: Config = {
         "custom-light-gray": "#efeee699",
       },
       animation: {
-        marquee: "marquee 30s linear infinite",
+        marquee: 'marquee 25s linear infinite',
       },
       keyframes: {
         marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },

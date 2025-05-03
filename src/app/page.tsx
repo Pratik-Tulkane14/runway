@@ -11,12 +11,12 @@ import Tech from "./components/Tech";
 export default function Home() {
   return (
     <div className="h-full w-full relative">
-      {/* <Hero />
+      <Hero />
       <Tech/>
       <News/>
       <Narrative/>
       <Research/>
-      <Story /> */}
+      <Story />
       <Initiative />
       <Creatives />
       <Partners />

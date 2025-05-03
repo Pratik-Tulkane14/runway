@@ -10,7 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         "custom-gray": "#666e7a",
-        "custom-light-gray": "#efeee699"
+        "custom-light-gray": "#efeee699",
+      },
+      animation: {
+        marquee: "marquee 30s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
     },
   },

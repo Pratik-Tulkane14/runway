@@ -24,7 +24,7 @@ const Narrative = () => {
     ]
     return (
         <div className={`${commonStyle} bg-black flex flex-col gap-15 items-center py-10`}>
-            <div className="flex flex-col items-center gap-2  w-[45%]">
+            <div className="flex flex-col items-center gap-2  sm:w-[45%]">
                 <p className='text-white font-bold text-sm'>Runway Gen-4</p>
                 <h4 className='text-white text-3xl'>Narrative Capabilities</h4>
                 <p className='text-gray-300 text-center'>A collection of short films and music videos made entirely with Gen-4 to test the model&#39;s narrative capabilities.</p>

@@ -4,9 +4,9 @@ const Tech = () => {
     return (
         <>
             <div className='w-full h-full mt-18  px-4 flex flex-col justify-center items-center bg-white gap-y-0 md:gap-y-10'>
-                <div className="flex flex-col items-center gap-y-5 md:gap-y-8 md:mt-20">
+                <div className="flex flex-col items-center gap-y-5  md:mt-20">
 
-                    <h6 className="font-['timesNew'] text-3xl md:text-[5.5vw] leading-10 md:leading-16">Technology for a new era <br />
+                    <h6 className="font-['timesNew'] text-3xl md:text-[5.5vw] leading-10 md:leading-20">Technology for a new era <br />
                         of media and storytelling.</h6>
                     <p className='text-justify md:text-center'>Runway is a global AI research and media company working with the world’s top film studios,<br className='hidden md:block'/>
                         production companies, agencies and brands. We build foundational AI research models

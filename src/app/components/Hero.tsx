@@ -3,7 +3,7 @@ import { GoArrowRight } from 'react-icons/go'
 
 const Hero = () => {
   return (
-    <div className='h-screen w-full relative'>
+    <div className='h-dvh w-full relative'>
       <video
         muted
         autoPlay
@@ -15,7 +15,7 @@ const Hero = () => {
       >
         <source src='/videos/hero.mp4' />
       </video>
-      <div className="absolute bottom-10 px-4 md:px-9 flex flex-col  md:gap-3">
+      <div className="absolute bottom-10 px-5 md:px-9 flex flex-col  md:gap-3">
         <h6 className='text-white text-bold'>Made with Gen-4</h6>
         <p className="text-white text-bold font-['timesNow'] text-[10vw] md:text-[4.8vw] md:leading-15">The Lonely Little Flame</p>
         <p className="text-[#efeee699] font-['timesNow'] text-[10vw] md:text-[4.8vw] md:leading-15">NYC is a Zoo</p>

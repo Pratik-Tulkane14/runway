@@ -20,7 +20,30 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+.moving-images {
+  /* display: inline-block; */
+  /* white-space: nowrap; */
+  animation: move;
+  animation-timing-function: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: orangered;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1vw 2vw;
+}
+@keyframes move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 body {
   /* background: var(--background);
   color: var(--foreground); */

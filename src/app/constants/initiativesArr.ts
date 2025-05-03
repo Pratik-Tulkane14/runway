@@ -2,7 +2,8 @@ import { cardTypes } from "../types";
 
 const initiativesArr: cardTypes[] = [
   {
-    imgPath: "/images/aiff-banner-logo.png",
+    // imgPath: "/images/aiff-banner-logo.png",
+    imgPath: "/images/CustomerStories_004.jpg",
     heading: "AI Film Festival",
     date: "An annual celebration of the art and artists at the forefront of storytelling.",
   },

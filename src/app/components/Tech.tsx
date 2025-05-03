@@ -20,7 +20,7 @@ const Tech = () => {
 
                     </div>
                 </div>
-                <VideoUi source="/videos/tech.mp4" style="w-full mt-8 md:mt-0 rounded-lg md:object-cover" poster='' />
+                <VideoUi source="/videos/teaser1.mp4" style="w-full mt-8 md:mt-0 rounded-lg md:object-cover" poster='/images/teaser2.webm' />
             </div>
         </>
 

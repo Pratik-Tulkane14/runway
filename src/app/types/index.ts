@@ -38,3 +38,6 @@ export interface BrandImage {
   width: number;
   height: number;
 }
+export interface videos {
+  source: string;
+}

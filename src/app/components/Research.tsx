@@ -18,7 +18,7 @@ const Research = () => {
                         imgPath={item.imgPath}
                         heading={item.heading}
                         date={item.date}
-                        style="text-white h-auto"
+                        style="text-white h-full"
 
                     />
                 })}

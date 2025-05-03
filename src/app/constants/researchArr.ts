@@ -7,8 +7,8 @@ const researchArr: cardTypes[] = [
     date: "research / April 1, 2025",
   },
   {
-    imgPath: "/images/girl.jpg",
-    // imgPath: "/images/Researchhub_002.png",
+    // imgPath: "/images/girl.jpg",
+    imgPath: "/images/lionsgate.jpg",
     heading: "Introducing Frames",
     date: "research / May 1, 2024",
   },

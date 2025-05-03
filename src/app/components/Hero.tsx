@@ -1,12 +1,57 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useRef, useState } from 'react'
 import { GoArrowRight } from 'react-icons/go'
 import Button from './Button'
-import VideoUi from './VideoUi'
+import { videos } from '../types'
 
 const Hero = () => {
+  const videosArr: videos[] = [
+    {
+      source: "/videos/hero.mp4"
+    },
+    {
+      source: "/videos/teaser1.mp4"
+    },
+    {
+      source: "/videos/teaser2.mp4",
+    },
+    {
+      source: "/videos/teaser3.webm"
+    },
+    {
+      source: "/videos/footer.webm"
+    },
+  ]
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const handleVideoEnd = () => {
+    // Play next video when current ends
+    const nextIndex = (currentVideoIndex + 1) % videosArr.length;
+    setCurrentVideoIndex(nextIndex);
+  };
+
+  // Play the new video when currentVideoIndex changes
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.load();
+      videoRef.current.play().catch(e => console.log("Autoplay prevented:", e));
+    }
+  }, [currentVideoIndex]);
   return (
     <div className='h-dvh w-full relative'>
-      <VideoUi source="/videos/hero.mp4" style="object-cover h-full w-full opacity-95" poster='' />
+      <video
+        ref={videoRef}
+        key={videosArr[currentVideoIndex].source}
+        className="w-full h-full object-cover"
+        onEnded={handleVideoEnd}
+        muted
+        autoPlay
+        playsInline
+      >
+        <source src={videosArr[currentVideoIndex].source} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="absolute bottom-10 px-5 md:px-9 flex flex-col  md:gap-3">
         <h6 className='text-white text-bold'>Made with Gen-4</h6>
         <p className="text-white text-bold font-['timesNow'] text-[10vw] md:text-[4.8vw] md:leading-15">The Lonely Little Flame</p>

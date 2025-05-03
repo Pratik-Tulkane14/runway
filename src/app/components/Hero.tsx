@@ -2,36 +2,18 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { GoArrowRight } from 'react-icons/go'
 import Button from './Button'
-import { videos } from '../types'
+import videosArr from '../constants/videosArr'
 
 const Hero = () => {
-  const videosArr: videos[] = [
-    {
-      source: "/videos/hero.mp4"
-    },
-    {
-      source: "/videos/teaser1.mp4"
-    },
-    {
-      source: "/videos/teaser2.mp4",
-    },
-    {
-      source: "/videos/teaser3.webm"
-    },
-    {
-      source: "/videos/footer.webm"
-    },
-  ]
+
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const handleVideoEnd = () => {
-    // Play next video when current ends
     const nextIndex = (currentVideoIndex + 1) % videosArr.length;
     setCurrentVideoIndex(nextIndex);
   };
 
-  // Play the new video when currentVideoIndex changes
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.load();

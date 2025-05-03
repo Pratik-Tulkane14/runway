@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import navItem from '../constants/navItem'
 import { IoClose } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
+import Button from './Button';
 const Navbar = () => {
     const style = "fixed top-0 z-10 h-16 w-full px-5 py-3 flex justify-between items-center transition-all duration-200 ease-in-out";
     const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -28,15 +29,15 @@ const Navbar = () => {
     return (
         <>
             <div className={`w-full ${isScrolled ? "bg-[rgba(0,0,0,0.9)]" : "bg-transparent"} ${style}`}>
-                <h6 className="text-white text-2xl font-extrabold">runway</h6>
+                <h6 className="text-white text-3xl font-bold">runway</h6>
                 <div className="hidden md:flex justify-center items-center gap-4">
                     {navItem.map((item, index) => {
                         return (
-                            <Link className='uppercase text-[12px] text-white font-semibold' href={item.path} key={index}>{item.name}</Link>
+                            <Link className='uppercase text-sm text-white font-semibold' href={item.path} key={index}>{item.name}</Link>
                         )
                     })}
                 </div>
-                <button className="hidden md:block px-3 py-1 text-white  border-1 border-rounded border-white rounded-2xl text-md  bg-transparent capitalize hover:text-gray-200">get started</button>
+                <Button name='get started' style={`hidden md:block text-white border-white text-md   hover:text-gray-200 ${isScrolled ? "bg-white text-black" : "bg-transparent"}`} />
                 <button className='md:hidden' onClick={handleClick}>
                     {!isMenuOpen && <IoMenu className='text-white' />
 
@@ -56,7 +57,7 @@ const Navbar = () => {
                                 href={item.path} key={index}>{item.name}</Link>
                         )
                     })}
-                    <button className="px-3 py-2 rounded-2xl text-md text-white  bg-black capitalize w-full">get started</button>
+                    <Button name='get started' style="text-white bg-black w-full" />
                 </div>
             </div>
 

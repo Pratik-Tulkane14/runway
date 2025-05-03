@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface NavItems {
   name: string;
   path: string;
@@ -19,4 +21,9 @@ export interface cardTypes {
   heading: string;
   date: string;
   style?: string;
+}
+export interface buttonProps {
+  name: string;
+  style: string;
+  children?: ReactNode;
 }

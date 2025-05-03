@@ -1,5 +1,6 @@
 import React from 'react'
 import { GoArrowRight } from 'react-icons/go'
+import Button from './Button'
 
 const Hero = () => {
   return (
@@ -22,10 +23,10 @@ const Hero = () => {
         <p className="text-[#efeee699] font-['timesNow'] text-[10vw] md:text-[4.8vw] md:leading-15">The Herd</p>
         <p className='text-white'>A series of short films made with Gen-4, our next-generation series <br /> of AI models for media generation and world consistency.</p>
         <div className="flex flex-wrap gap-3 items-center mt-5">
-          <button className='px-4 py-1.5 flex items-center gap-1 text-md rounded-full text-black hover:text-gray-600 hover:cursor-pointer bg-white capitalize'>try runway now
+          <Button name='try runway now' style="flex items-center gap-1 text-black hover:text-gray-600 hover:cursor-pointer bg-white border-none" >
             <GoArrowRight />
-          </button>
-          <button className='px-4 py-1.5 text-md rounded-full text-white hover:text-black hover:bg-white transition-all ease-in-out duration-200 border-1 capitalize'>learn more about gen-4</button>
+          </Button>
+          <Button name='learn more about gen-4' style="text-white hover:text-black hover:bg-white" />
         </div>
       </div>
     </div>

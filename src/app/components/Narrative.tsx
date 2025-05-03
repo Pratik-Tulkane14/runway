@@ -1,6 +1,7 @@
 import React from 'react'
 import { commonStyle } from '../constants/commonStyle'
 import Image from 'next/image'
+import Button from './Button'
 interface image {
     path: string
 }
@@ -28,7 +29,8 @@ const Narrative = () => {
                 <p className='text-white font-bold text-sm'>Runway Gen-4</p>
                 <h4 className='text-white text-3xl'>Narrative Capabilities</h4>
                 <p className='text-gray-300 text-center'>A collection of short films and music videos made entirely with Gen-4 to test the model&#39;s narrative capabilities.</p>
-                <button className='capitalize text-black bg-white px-3 py-1 rounded-full hover:text-white hover:bg-black hover:outline-2 hover:border-white transition-all ease-in-out duration-400'>learn more</button>
+                <Button name='learn more' style="text-black bg-white hover:text-white hover:bg-black hover:outline-1 hover:border-white" />
+
             </div>
             <div className="flex flex-wrap gap-3 justify-center w-full">
                 {images.map((item, index) => {

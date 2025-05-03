@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Tech = () => {
     return (
@@ -8,13 +9,14 @@ const Tech = () => {
 
                     <h6 className="font-['timesNew'] text-3xl md:text-[5.5vw] leading-10 md:leading-20">Technology for a new era <br />
                         of media and storytelling.</h6>
-                    <p className='text-justify md:text-center'>Runway is a global AI research and media company working with the world’s top film studios,<br className='hidden md:block'/>
+                    <p className='text-justify md:text-center'>Runway is a global AI research and media company working with the world’s top film studios,<br className='hidden md:block' />
                         production companies, agencies and brands. We build foundational AI research models
-                        <br className='hidden md:block'/>
+                        <br className='hidden md:block' />
                         and creative tools that are empowering a new production paradigm.</p>
                     <div className="flex flex-wrap justify-center gap-2">
-                        <button className='text-black bg-white border-1 capitalize rounded-full px-4 py-1   hover:text-white hover:bg-black transition-all ease-in-out duration-300 '>gen-4</button>
-                        <button className='text-black bg-white border-1 capitalize rounded-full px-4 py-1    hover:text-white hover:bg-black transition-all ease-in-out duration-300 '>our research</button>
+                        <Button name='gen-4' style="text-black bg-white border-1 capitalize rounded-full px-4 py-1 hover:text-white hover:bg-black" />
+                        <Button name='our research' style="text-black bg-white hover:text-white hover:bg-black" />
+
                     </div>
                 </div>
                 <video

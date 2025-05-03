@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Story = () => {
     return (
@@ -22,7 +23,8 @@ const Story = () => {
             <h4 className='text-white text-xl sm:text-[2.4vw] sm:leading-10 text-center sm:mt-8'>Runway Studios is the entertainment and production arm of Runway, <br className='hidden sm:inline-flex' />
                 dedicated to producing and funding films, documentaries, <br className='hidden sm:inline-flex' />
                 printed publications, music videos and other media.</h4>
-            <button className='capitalize w-48  text-white bg-black px-3 py-1.5 rounded-full hover:text-black hover:bg-white outline-1 border-white transition-all ease-in-out duration-400'>go to runway studio</button>
+            <Button name='go to runway studio' style="w-48  text-white bg-black hover:text-black hover:bg-white border-white" />
+
         </div>
     )
 }

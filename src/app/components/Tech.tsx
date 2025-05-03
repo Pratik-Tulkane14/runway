@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import VideoUi from './VideoUi'
 
 const Tech = () => {
     return (
@@ -19,19 +20,7 @@ const Tech = () => {
 
                     </div>
                 </div>
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    // poster=''
-                    preload='auto'
-                    className='w-full mt-8 md:mt-0 rounded-lg md:object-cover '
-                >
-                    <source
-                        src="/videos/tech.mp4"
-                    />
-                </video>
+                <VideoUi source="/videos/tech.mp4" style="w-full mt-8 md:mt-0 rounded-lg md:object-cover" poster='' />
             </div>
         </>
 

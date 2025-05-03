@@ -37,7 +37,7 @@ const Navbar = () => {
                         )
                     })}
                 </div>
-                <Button name='get started' style={`hidden md:block text-white border-white text-md   hover:text-gray-200 ${isScrolled ? "bg-white text-black" : "bg-transparent"}`} />
+                <Button name='get started' style={`hidden md:block text-white border-white text-md   hover:text-gray-200 ${isScrolled ? "text-black" : "bg-transparent"}`} />
                 <button className='md:hidden' onClick={handleClick}>
                     {!isMenuOpen && <IoMenu className='text-white' />
 

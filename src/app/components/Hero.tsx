@@ -1,21 +1,12 @@
 import React from 'react'
 import { GoArrowRight } from 'react-icons/go'
 import Button from './Button'
+import VideoUi from './VideoUi'
 
 const Hero = () => {
   return (
     <div className='h-dvh w-full relative'>
-      <video
-        muted
-        autoPlay
-        loop
-        playsInline
-        // poster=''
-        preload='auto'
-        className='object-cover h-full w-full opacity-95'
-      >
-        <source src='/videos/hero.mp4' />
-      </video>
+      <VideoUi source="/videos/hero.mp4" style="object-cover h-full w-full opacity-95" poster='' />
       <div className="absolute bottom-10 px-5 md:px-9 flex flex-col  md:gap-3">
         <h6 className='text-white text-bold'>Made with Gen-4</h6>
         <p className="text-white text-bold font-['timesNow'] text-[10vw] md:text-[4.8vw] md:leading-15">The Lonely Little Flame</p>

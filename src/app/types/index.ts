@@ -27,3 +27,8 @@ export interface buttonProps {
   style: string;
   children?: ReactNode;
 }
+export interface videoProps {
+  source: string;
+  style: string;
+  poster?: string;
+}

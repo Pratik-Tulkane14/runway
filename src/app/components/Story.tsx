@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import VideoUi from './VideoUi'
 
 const Story = () => {
     return (
@@ -8,17 +9,7 @@ const Story = () => {
             <h4 className={`font-[timesNow] text-xl sm:text-[7vw] md:leading-28 text-center text-white`}>For anyone with <br />
                 a story to tell.</h4>
             <div className="flex justify-center">
-                <video
-                    muted
-                    autoPlay
-                    loop
-                    playsInline
-                    // poster=''
-                    preload='auto'
-                    className='rounded-lg  w-[70vw]'
-                >
-                    <source src='/videos/hero.mp4' />
-                </video>
+                <VideoUi source="/videos/hero.mp4" style="w-[70vw]" poster='' />
             </div>
             <h4 className='text-white text-xl sm:text-[2.4vw] sm:leading-10 text-center sm:mt-8'>Runway Studios is the entertainment and production arm of Runway, <br className='hidden sm:inline-flex' />
                 dedicated to producing and funding films, documentaries, <br className='hidden sm:inline-flex' />
